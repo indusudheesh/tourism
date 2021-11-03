@@ -1,0 +1,251 @@
+*{
+
+    margin: 0;
+    padding:0;
+}
+
+.head{
+    position:absolute;
+    top: 0;
+    background-color: rgb(129, 150, 12);
+    height:120px;
+    width: 100%;
+    opacity: .6;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo P{
+
+    color: rgb(199, 32, 82);
+     font-weight: 700;
+}
+
+.links{
+ 
+    left: 900px;
+    top:30px;
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+}
+
+.links a{
+
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(37, 25, 6);
+}
+
+.logo img{
+
+    height: 120px;
+    width:150px;
+    left :0px;
+    top:0px;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+}
+.logo p{
+    position: absolute;
+    left:180px;
+    top: 70px;
+    font-size: 38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    position: fixed;
+    z-index: 2;
+;
+}
+.carouselekm{
+    position: relative;
+    top:0px;
+    height: 320px;
+    width: 100%;
+}
+
+.transbox{
+
+    background-color: black;
+    opacity: 0.7;
+}
+
+#aboutus{
+    position:relative;
+    height: 450px;
+    width: 560px;
+    top: 150px;
+    left: 150px;
+    text-align: justify;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#linkimages{
+
+    position: absolute;
+    
+    top: 620px;
+    left: 800px;
+}
+
+#linkimages img{
+
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+
+.marq{
+    
+        color: tomato;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        position: absolute;
+        top: 870px;
+        left: 900px;
+        
+}
+
+.topimg img{
+
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top:1070px;
+    
+}
+
+#placeofinterest{
+    position: absolute;
+    top: 1220px;
+    left: 50px;
+    right: 50px;
+
+}
+
+.placesofinterestsub{
+    position: absolute;
+    top: 1820px;
+    left: 50px;
+    right: 50px;
+}
+
+#queenarabian{
+    position: absolute;
+    top: 2320px;
+    left: 50px;
+    right: 50px;
+}
+
+#queenarabian img{
+
+    padding: 20px;
+    height: 450px;
+    width: 650px;
+}
+
+#queenarabian p{
+
+    text-align: justify;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#cultureandheritage{
+    position: absolute;
+    top: 3200px;
+    left: 50px;
+    right: 50px;
+}
+
+footer{
+    background-color: rgb(129, 150, 12);
+        color: white;
+        text-align: center;
+        position:relative;
+        top: 3800px;
+        width: 100%;
+        height: 150px;
+    }
+    
+    
+    footer i{
+        font-size: 40px;
+        
+    
+    }
+    
+    .fa-facebook-square{
+        background:white;
+         /* color:rgb(13, 13, 196);*/
+         color: rgb(22, 19, 185);  
+      }
+    
+      .fa-twitter-square{
+    
+        background-color: blanchedalmond;
+        color: rgb(52, 111, 221);
+      }
+    
+      .fa-youtube{
+          background-color: red;
+          color: white;
+    
+      }
+    
+    .fa-whatsapp-square{
+        background-color: white;
+        color: green;
+    }
+    
+      .fa-instagram-square{
+          background-color: white;
+          color: rgb(97, 74, 97);
+      }
+      .fa-linkedin
+      {
+          background-color: white;
+          color: blue;
+    
+      }
+    
+      .fa-pinterest{
+          background-color: red;
+          color: white;
+      }
+    
+      body{
+          background-image: url(../trissur/white.jpg);
+          background-size: cover;
+
+        background-attachment: fixed;
+      }
+
+      .cul img{
+          float: right;
+      }
+
+      @media screen and (max-width: 1200px) {
+        footer {
+          display: none;
+        }
+       #linkimages{
+           display: none;
+       }
+       
+      
+
+       #cultureandheritage marquee{
+           display: none;
+       }
+
+      }
+
+      @media screen and (max-width: 1400px) {
+        #queenarabian{
+            display:none;
+        }
+    }

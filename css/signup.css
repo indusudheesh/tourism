@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background: url(../homeimages/background1.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.head{
+    position:absolute;
+    top: 0;
+    background-color: rgb(129, 150, 12);
+    height:120px;
+    width: 100%;
+    opacity: .6;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo P{
+
+    color: rgb(199, 32, 82);
+     font-weight: 700;
+}
+
+.links{
+ 
+    left: 900px;
+    top:30px;
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+}
+
+.links a{
+
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(37, 25, 6);
+}
+
+.logo img{
+
+    height: 120px;
+    width:150px;
+    left :0px;
+    top:0px;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+}
+.logo p{
+    position: absolute;
+    left:180px;
+    top: 70px;
+    font-size: 38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    position: fixed;
+    z-index: 1;
+;
+}
+
+
+.signup{
+    background-color: rgba(120, 19, 202, 0.596);
+    height: 660px;
+    width: 570px;
+    position:absolute ;
+    top: 200px;
+    left: 500px;
+    padding: 30px;
+    background-image: url("../signupimages/signupform.jpg");
+    background-size: cover;
+}
+
+.signup label{
+
+    font-size: 20px;
+    color: rgba(44, 16, 16, 0.918);
+    font-weight: 700;
+}
+
+#lblfirst{
+    position: absolute;
+    left: 50px;
+top: 90px;
+}
+
+#txtfirst{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    background-color:rgba(112, 183, 204, 0.466);
+    border: none;
+}
+#lbllast{
+
+position: absolute;
+    top: 90px;
+    left: 300px;
+}
+
+#txtlast{
+    position: absolute;
+    left: 300px;
+    top: 120px;
+    background-color:rgba(112, 183, 204, 0.466);
+    border: none;
+}
+
+.gender{
+    position: absolute;
+    left: 300px;
+    top:170px ;
+}
+
+#lblbday{
+    position: absolute;
+    left: 50px;
+    top: 160px;       
+    }
+
+#date{
+    position: absolute;
+    left: 50px;
+    top: 190px;
+    background-color:rgba(112, 183, 204, 0.466);
+    border: none;
+
+}    
+
+#lblemail{
+position: absolute;
+    left: 50px;
+    top:300px ;
+}
+
+#email{
+    position: absolute;
+        left: 50px;
+        top:330px ;
+        background-color:rgba(112, 183, 204, 0.466);
+    border: none;
+    }
+#lblphone{
+        position: absolute;
+            left: 300px;
+            top:300px ;
+        } 
+#txtphone{
+            position: absolute;
+                left: 300px;
+                top:330px ;
+                background-color:rgba(112, 183, 204, 0.466);
+    border: none;
+            }
+ #lblpwd{
+    position: absolute;
+     left: 50px;
+     top:380px ;
+ }
+ 
+ #pwd{
+    position: absolute;
+        left: 50px;
+        top:410px ;
+        width: 80%;
+        background-color:rgba(112, 183, 204, 0.466);
+    border: none;
+    }
+ #lblcnfrmpwd{
+    position: absolute;
+        left: 50px;
+        top:450px ;
+    }
+
+#cnfrmpwd{
+        position: absolute;
+            left: 50px;
+            top:480px ;
+            width: 80%;
+            background-color:rgba(112, 183, 204, 0.466);
+    border: none;
+        }    
+
+.signup button{
+
+    position: absolute;
+    left:220px;
+    top:550px;
+    width: 100px;
+    height: 40px;
+    background-color: rgba(105, 180, 199, 0.589);
+    border: 2px solid rgba(18, 179, 228, 0.986);
+    color: rgb(49, 6, 6);
+    font-weight: 500;
+}        
+
+#lbllogin{
+
+    position: absolute;
+    top:610px ;
+}
+
+footer{
+    background-color: rgb(129, 150, 12);
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 1000px;
+        width: 100%;
+        height: 110px;
+    }
+    
+    
+    footer i{
+        font-size: 40px;
+        
+    
+    }
+    
+    .fa-facebook-square{
+        background:white;
+         /* color:rgb(13, 13, 196);*/
+         color: rgb(22, 19, 185);  
+      }
+    
+      .fa-twitter-square{
+    
+        background-color: blanchedalmond;
+        color: rgb(52, 111, 221);
+      }
+    
+      .fa-youtube{
+          background-color: red;
+          color: white;
+    
+      }
+    
+    .fa-whatsapp-square{
+        background-color: white;
+        color: green;
+    }
+    
+      .fa-instagram-square{
+          background-color: white;
+          color: rgb(97, 74, 97);
+      }
+      .fa-linkedin
+      {
+          background-color: white;
+          color: blue;
+    
+      }
+    
+      .fa-pinterest{
+          background-color: red;
+          color: white;
+      }
+
+      @media screen and (max-width: 900px) {
+        footer {
+          display: none;
+        }
+        
+    }
+    @media screen and (max-width: 1300px) {
+        footer {
+          top: 1200px;
+        }
+
+        .signup{
+
+            left: 300px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        
+        .signup{
+
+            left: 100px;
+        }
+        
+    }
