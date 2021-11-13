@@ -79,8 +79,8 @@ body{
 }
 
 figure{
-float: left;
 
+border-radius: 10px;
       
 }
 

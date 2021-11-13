@@ -88,7 +88,7 @@ body{
 }
 
 
-.loginform button{
+.loginform #btnSubmit{
 position: relative;
     width: 100px;
     height: 40px;
@@ -110,34 +110,53 @@ position: relative;
 
     position: relative;
     left:10px;
-    top: 5px;
+    top: 0px;
     color: rgb(177, 125, 62);
     font-size: 20px;
 }
 
-#txtusername{
+#txtEmail{
     position: relative;
     left:10px;
-    top: 15px;
+    top: 0px;
     color: rgb(177, 125, 62);
     font-size: 20px;
 
 }
+
+#lblEmailVal
+{
+    position: relative;
+    left:10px;
+    top: 0px;
+    color: rgb(226, 47, 47);
+    font-size: 15px;
+}
+
 #lbl2{
 
     position: relative;
     left:10px;
-    top: 10px;
+    top: 0px;
     color: rgb(177, 125, 62);
     font-size: 20px;
 }
-#txtpwd{
+#txtPwd{
     position: relative;
     left:10px;
-    top: 10px;
+    top: 0px;
     color: rgb(177, 125, 62);
     font-size: 20px;
 
+}
+
+#lblPwdVal
+{
+    position: relative;
+    left:10px;
+    top: 0px;
+    color: rgb(226, 47, 47);
+    font-size: 15px; 
 }
 
 #anchor{

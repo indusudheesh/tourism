@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+.redborder
+    {
+        border:2px solid red
+    }
+.dfltborder
+{
+    border: 1px solid rgba(68, 143, 167, 0.986)
+}
 body{
 
     background: url(../homeimages/background1.jpg);
@@ -69,7 +77,7 @@ body{
 
 .signup{
     background-color: rgba(120, 19, 202, 0.596);
-    height: 660px;
+    height: 680px;
     width: 570px;
     position:absolute ;
     top: 200px;
@@ -79,7 +87,7 @@ body{
     background-size: cover;
 }
 
-.signup label{
+.signup label, .chkDiv{
 
     font-size: 20px;
     color: rgba(44, 16, 16, 0.918);
@@ -92,12 +100,20 @@ body{
 top: 90px;
 }
 
-#txtfirst{
+#txtFirst{
     position: absolute;
     top: 120px;
     left: 50px;
     background-color:rgba(112, 183, 204, 0.466);
-    border: none;
+    
+}
+#lblfirstvalid
+{
+    position:absolute;
+    top:145px;
+    left:50px;
+    font-size: 15px;
+    color: rgb(7, 12, 80);
 }
 #lbllast{
 
@@ -106,18 +122,35 @@ position: absolute;
     left: 300px;
 }
 
-#txtlast{
+#txtLast{
     position: absolute;
     left: 300px;
     top: 120px;
     background-color:rgba(112, 183, 204, 0.466);
-    border: none;
+    
 }
 
+#lbllastvalid
+{
+    position:absolute;
+    top:145px;
+    left:300px;
+    font-size: 15px;
+    color: rgb(7, 12, 80);
+}
 .gender{
     position: absolute;
     left: 300px;
     top:170px ;
+}
+
+#lblgendervalid
+{
+    position:absolute;
+    top:260px;
+    left:300px;
+    font-size: 15px;
+    color: rgb(7, 12, 80);
 }
 
 #lblbday{
@@ -131,9 +164,18 @@ position: absolute;
     left: 50px;
     top: 190px;
     background-color:rgba(112, 183, 204, 0.466);
-    border: none;
+    
 
-}    
+} 
+
+#lbldatevalid
+{
+    position:absolute;
+    top:215px;
+    left:50px;
+    font-size: 15px;
+    color: rgb(7, 12, 80);
+}
 
 #lblemail{
 position: absolute;
@@ -141,25 +183,44 @@ position: absolute;
     top:300px ;
 }
 
-#email{
+#txtEmail{
     position: absolute;
         left: 50px;
         top:330px ;
-        background-color:rgba(112, 183, 204, 0.466);
-    border: none;
+        background-color:rgba(112, 183, 204, 0.938);
+    
     }
+
+    #lblemailvalid
+{
+    position:absolute;
+    top:355px;
+    left:50px;
+    font-size: 15px;
+    color: rgb(7, 12, 80);
+}
+
 #lblphone{
         position: absolute;
             left: 300px;
             top:300px ;
         } 
-#txtphone{
+#txtPhone{
             position: absolute;
                 left: 300px;
                 top:330px ;
-                background-color:rgba(112, 183, 204, 0.466);
-    border: none;
+                background-color:rgba(112, 183, 204, 0.877);
+
             }
+            #lblphonevalid
+            {
+                position:absolute;
+                top:355px;
+                left:300px;
+                font-size: 15px;
+                color: rgb(7, 12, 80);
+            }
+
  #lblpwd{
     position: absolute;
      left: 50px;
@@ -171,29 +232,69 @@ position: absolute;
         left: 50px;
         top:410px ;
         width: 80%;
-        background-color:rgba(112, 183, 204, 0.466);
-    border: none;
+        background-color:rgba(112, 183, 204, 0.904);
+
     }
+
+    .chkDiv
+    {
+        position:absolute;
+        left: 50px;
+        top:450px ;
+        font-weight: 500;
+        font-style: italic;
+        color: rgb(69, 6, 187);
+    }
+   #indicator
+   {
+       position:absolute;
+    left: 300px;
+    top:450px ;
+    width: 90%;  
+    width:200px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+    color: rgb(49, 6, 6);
+   }
+    #lblpwdvalid
+{
+    position:absolute;
+    top:435px;
+    left:50px;
+    font-size: 15px;
+    color: rgb(7, 12, 80);
+}
  #lblcnfrmpwd{
     position: absolute;
         left: 50px;
-        top:450px ;
+        top:480px ;
     }
 
 #cnfrmpwd{
         position: absolute;
             left: 50px;
-            top:480px ;
+            top:510px ;
             width: 80%;
-            background-color:rgba(112, 183, 204, 0.466);
-    border: none;
-        }    
+            background-color:rgba(112, 183, 204, 0.87);
+    
+        }   
+        
+        #lblcnfrmpwdvalid
+{
+    position:absolute;
+    top:540px;
+    left:50px;
+    font-size: 15px;
+    color: rgb(7, 12, 80);
+}
 
 .signup button{
 
     position: absolute;
     left:220px;
-    top:550px;
+    top:570px;
     width: 100px;
     height: 40px;
     background-color: rgba(105, 180, 199, 0.589);
@@ -205,7 +306,7 @@ position: absolute;
 #lbllogin{
 
     position: absolute;
-    top:610px ;
+    top:630px ;
 }
 
 footer{

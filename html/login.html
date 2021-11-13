@@ -14,6 +14,7 @@
    
     <script src="https://kit.fontawesome.com/516210eb85.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/login.css">
+    
 
 
 </head>
@@ -33,7 +34,7 @@
     <!--navbar-->
     <div class="links">
     
-      <a href="../html/index.html">Home</a>
+      <a href="" Disable >Home</a>
       <a href="../html/login.html" target="_blank" style="color: blue;">Log In</a>
       <a href="../html/signup.html">Sign Up</a>
       <a href="../html/districts.html">Districts</a>
@@ -47,19 +48,21 @@
 </div>
 <!--/imagewithlogin-->
     <!--loginform-->
-    <form action="" class="loginform" style="height: 400px;width: 350px;">
+    <form action="../html/index.html" class="loginform" style="height: 400px;width: 350px;" onsubmit="return validate()">
   <!--<h1 style="text-align: center; color: red;"> Kerala Tourism</h1><br><br>-->
 <h3 style="text-align: center; color: rgba(236, 204, 17, 0.918);">Welcome Kerala!</h3> 
 
 <div class="usrdet">
-    <label id="lbl1"> Username or email</label> <br>
+    <label id="lbl1"> email</label> <br>
 
-<input type="text" placeholder="username" id="txtusername" style="height: 25px; width: 200px;"><br><br>
+<input type="text" placeholder="email" id="txtEmail" style="height: 25px; width: 200px;" oninput="clearemail()" > <br>
+<label for="" id="lblEmailVal"></label> <br>
 <label id="lbl2" > Password </label><br> 
 
-<input type="password" placeholder="*****" id="txtpwd" style=" width: 200px; height: 25px;"><br>
+<input type="password" placeholder="" id="txtPwd" style=" width: 200px; height: 25px;" oninput="clearpwd()"><br>
+<label for="" id="lblPwdVal"></label> <br>
 <a id="anchor"  href="#">forgot password</a> <br>
-<button>Log In</button> 
+<input type="submit" value="Log In" id="btnSubmit">
 <label id="lbl3"> No account  <a href="../html/signup.html" style="color: darkblue;">create an Account</a>        </label>
 
 </div>
@@ -172,5 +175,6 @@
               <a href="https://in.pinterest.com/keralatourism/" target="_blank"><i class="fab fa-pinterest"></i></a>
 
 </footer>
+<script src="../javascript/login.js"></script>
 </body>
 </html>

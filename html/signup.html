@@ -44,31 +44,47 @@
   
 
     <!--signup form-->
-<form action="" class="signup">
+<form action="../html/login.html" class="signup" onsubmit="return validate()" >
 <label for="" style="width: 100%; text-align: center; font-size: 30px; color: rgb(179, 90, 102);">Registration Form</label><br>
+
 <label id="lblfirst" for="">First Name</label><br>
-<input type="text" id="txtfirst" ><br>
+<input type="text" id="txtFirst" oninput="clearfirst()" class="dfltborder"><br>
+<label id="lblfirstvalid" for=""></label><br>
+
 <label id="lbllast" for="">Last Name</label><br>
-<input type="text" id="txtlast" >
+<input type="text" id="txtLast" oninput="clearlast()" class="dfltborder" >
+<label id="lbllastvalid" for=""></label><br>
 <label id="lblbday" for="">Birthday</label>
-<input type="date" id="date" value="2021-10-25"><br>
+<input type="date" id="date" oninput="cleardate()" class="dfltborder"><br>
+<label id="lbldatevalid" for=""></label><br>
 
-<div class="gender">
+<div class="gender" oninput="cleargender()">
 <label for="">Gender</label><br>
-<input type="radio" id="gender" name="fav_language" value="HTML">
-<label for="html">Female</label><br>
-<input type="radio" id="css" name="fav_language" value="CSS">
-<label for="css">Male</label><br>
+<input type="radio" id="genderfemale" name="fav_language" value="HTML">
+<label for="">Female</label><br>
+<input type="radio" id="gendermale" name="fav_language" value="CSS">
+<label for="">Male</label><br>
 </div>
-
+<label id="lblgendervalid" for=""></label><br>
 <label id="lblemail" for="">Email</label><br>
-<input type="email" id="email"><br>
+<input type="email" id="txtEmail" oninput="clearemail()" class="dfltborder"><br>
+<label id="lblemailvalid" for=""></label><br>
+
 <label id="lblphone" for="">Phone Number</label><br>
-<input type="text" id="txtphone"><br>
+<input type="text" id="txtPhone" oninput="clearphone()" class="dfltborder"><br>
+<label id="lblphonevalid" for=""></label><br>
+
 <label id="lblpwd" for="">Password</label><br>
-<input type="password" id="pwd"><br>
+<input type="password" id="pwd" onkeyup="return passwordChanged()" class="dfltborder"><br>
+<label id="lblpwdvalid" for=""></label><br> 
+<div class="chkDiv">
+<input type="checkbox" id="chkShow" onclick="showPwd()">show password
+</div>
+<span id="indicator"></span>
+
 <label id="lblcnfrmpwd" for="">Confirm Password</label><br>
-<input id="cnfrmpwd" type="password">
+<input id="cnfrmpwd" type="password" oninput="clearcnfrmpwd()" class="dfltborder">
+<label id="lblcnfrmpwdvalid" for=""></label><br>
 <button> Sign Up</button>
 <label id="lbllogin" for="">Already a user?<a href="../html/login.html">Log In</a></label>
 </form>
@@ -93,6 +109,6 @@
     
     </footer>
 
-
+<script src="../javascript/signup.js"></script>
 </body>
 </html>
