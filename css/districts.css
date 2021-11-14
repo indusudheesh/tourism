@@ -15,7 +15,7 @@ body{
     position:absolute;
     top: 0;
     background-color: rgba(7, 0, 0, 0.404);
-    height:120px;
+    height:80px;
     width: 100%;
     opacity: 0.8;
     position: fixed;
@@ -41,8 +41,8 @@ body{
 }
 .logo img{
 
-    height: 120px;
-    width:120px;
+    height: 80px;
+    width:100px;
     left :0px;
     top:0px;
     position: absolute;
@@ -68,14 +68,14 @@ body{
 
 .logo p{
     position: absolute;
-    left:180px;
-    top: 70px;
+    left:150px;
+    top: 40px;
     font-size: 38px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 200;
     position: fixed;
     z-index: 1;
-;
+
 }
 
 figure{

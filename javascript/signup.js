@@ -205,7 +205,7 @@ function testcnfrmpwd()
  }
  else
  {
-    document.getElementById("lblcnfrmpwdvalid").innerText="*passwords does not match enter again";
+    document.getElementById("lblcnfrmpwdvalid").innerText="*password mismatch! Enter again";
     pwd.value="";
    cnfrmpwd.value="";
    ind.innerHTML = '<span></span>';
