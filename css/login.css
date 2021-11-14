@@ -75,6 +75,15 @@ body{
     width: 200px;
     background-size: cover;
 }
+.redborder
+    {
+        border:2px solid red
+    }
+
+    .dfltborder
+{
+    border: 1px solid rgba(8, 29, 36, 0.986)
+}
 
 .loginform{
     background-image: url(../login/loginform.jpg);
@@ -129,7 +138,7 @@ position: relative;
     position: relative;
     left:10px;
     top: 0px;
-    color: rgb(226, 47, 47);
+    color: rgb(175, 228, 29);
     font-size: 15px;
 }
 
@@ -155,8 +164,17 @@ position: relative;
     position: relative;
     left:10px;
     top: 0px;
-    color: rgb(226, 47, 47);
+    color: rgb(175, 228, 29);
     font-size: 15px; 
+}
+.chkDiv
+{
+    position:relative;
+    left: 10px;
+    top:0px ;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(212, 19, 100);
 }
 
 #anchor{

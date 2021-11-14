@@ -1,36 +1,26 @@
-var email=document.getElementById("txtEmail");
-var pwd=document.getElementById("txtPwd");
-var lblemail=document.getElementById("lblEmailVal");
-var lblpwd=document.getElementById("lblPwdVal");
-var regexpemail=/^(\w+([\.-]?\w+))@([a-zA-Z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
-var regexppwd=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-
 function validate()
 {
-    //var regexp=/^([A-Za-z0-9\.-]+)@([a-zA-Z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
-        if(email.value=="" && pwd.value=="")
-    {
-        lblemail.innerText="*Enter an email";
-        lblpwd.innerText="Enter your Password";
-        email.focus();
-        return false;
-    }
 
-      else if(email.value=="")
+  let email=document.getElementById("txtEmail");
+  let pwd=document.getElementById("txtPwd");
+  let lblemail=document.getElementById("lblEmailVal");
+  let lblpwd=document.getElementById("lblPwdVal");
+    if(email.value=="" || pwd.value=="")
+    {   
+      if(email.value=="")
       {
       lblemail.innerText="*Enter an email";
-      email.focus();
-      email.style.border="red";
-      return false;
+      email.className="redborder";
       }
      
-     else if(pwd.value=="")
+     if(pwd.value=="")
       {
-        lblemail.innerText="";
         lblpwd.innerText="*Enter your Password";
-        pwd.focus(); 
-        return false;
+        pwd.className="redborder";
       }
+        return false;
+    }
+  
   else
   {
       var e= testemail();
@@ -52,6 +42,9 @@ function validate()
 //function to validate email
 function testemail()
 {
+  let regexpemail=/^(\w+([\.-]?\w+))@([a-zA-Z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
+  let email=document.getElementById("txtEmail");
+  let lblemail=document.getElementById("lblEmailVal");
   if(regexpemail.test(email.value))
   {
      return true;    
@@ -67,6 +60,10 @@ else
 //function to validate password
 function testpwd()
 {
+  let regexppwd=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+  let pwd=document.getElementById("txtPwd");
+  let lblpwd=document.getElementById("lblPwdVal");
+
   if(regexppwd.test(pwd.value))
   { 
    return true;            
@@ -84,14 +81,33 @@ function testpwd()
 //function to notify errors with email
 function clearemail()
 {
-  lblemail.innerText="";
+ document.getElementById("lblEmailVal").innerText="";
+ document.getElementById("txtEmail").className="dfltborder";
   testemail();
 }
 
 //function to notify errors with password
 function clearpwd()
 {
-  lblpwd.innerText="";
- 
+  document.getElementById("lblPwdVal").innerText="";
+ document.getElementById("txtPwd").className="dfltborder";
   testpwd();
 }
+
+//toggle password visibilty
+function showPwd()
+ {
+    let chkShow=document.getElementById("chkShow");
+    let pwd=document.getElementById("txtPwd");      
+
+  if (chkShow.checked) 
+  {
+    pwd.type = "text";
+
+  } 
+  else
+   {
+    pwd.type = "password";
+    
+  }
+} 
