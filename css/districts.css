@@ -85,6 +85,12 @@ float: left;
       
 }
 
+figure:hover img{
+    
+    transform: scale(1.05);
+}
+
+
 figcaption {
     background-color: rgba(197, 79, 79, 0.774);
     color: rgb(223, 240, 241);
@@ -93,6 +99,7 @@ figcaption {
     text-align: center;
     width: 350px;
     line-height: 40px;
+    
 }
 footer{
     background-color: rgb(129, 150, 12);
