@@ -166,7 +166,7 @@ function passwordChanged()
    } 
    else 
    {
-       ind.innerHTML = '<span style="backgroundcolor:red">Weak!</span>';
+       ind.innerHTML = '<span style="backgroundcolor:red">Poor!</span>';
        ind.style.backgroundColor="red";
    }
 }
@@ -217,7 +217,8 @@ function testcnfrmpwd()
 //phone number validation
 function testphone()
 {
-    let regexpphone=/^(\d{3})([\.-]?\d{3})([\.-]?\d{4})$/;
+    //let regexpphone=/^(\d{3})([\.-]?\d{3})([\.-]?\d{4})$/;
+    let regexpphone=/^([1-9]{3})([\.-\s]?\d{3})([\.-\s]?\d{4})$/;
     let phone=document.getElementById("txtPhone");
     if(regexpphone.test(phone.value))
 {
